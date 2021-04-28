@@ -1,0 +1,62 @@
+/*Ejercicios de logica 1*/
+
+       //1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.
+
+         function contarCaracteres(){
+                let texto = prompt("Introduce un texto para saber cuantos caracteres tiene")     
+                            
+                 alert(`El texto tiene ${texto.length}  Caracteres`)
+                    console.log(`El texto tiene ${texto.length}  Caracteres`)
+                        }
+
+        contarCaracteres()
+
+        function contarCaracteres(texto){
+            console.log(`El texto tiene ${texto.length}  Caracteres`)
+                        }
+                
+                   
+            contarCaracteres()
+       
+                     
+            
+                //2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
+
+
+                function cortarStrings(texto,number){
+                 console.log(texto.slice(0,number))
+                     }
+
+
+                const cortarStrings = (texto,number) => {console.log(texto.slice(0,number))}
+
+                     cortarStrings("HOla mundo", 4)
+
+
+              //3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+
+            
+            function diviidrStrings(texto,symbol){
+                 console.log(texto.split(symbol))
+                     }
+               
+                     const diviidrStrings = (texto,symbol) =>{
+                 console.log(texto.split(symbol))
+                     }
+
+                     diviidrStrings("Hola como estas hoy", " ")
+
+
+               // 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo.
+                    
+            
+            
+            function repetirStrings(texto,number){
+                 console.log(texto.repeat(number))
+                     }
+               
+                     const repetirStrings = (texto,number) =>{
+                 console.log(texto.repeat(number))
+                     }
+
+                     repetirStrings("Hola como estas hoy ", 4)
